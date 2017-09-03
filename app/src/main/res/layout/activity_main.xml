@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:weightSum="4"
+    tools:context="com.example.loop.iiitt.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.0"
+        android:layout_above="@+id/login">
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2e2e2e"
+        android:layout_weight="2.0">
+        <TextView
+
+            android:textSize="50dp" android:textColor="#ffffff"
+            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="IIIT"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIRUCHIRAPPALLI"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.0"
+        android:layout_weight="1.0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.0"
+        android:layout_weight="1.0">
+        <ImageButton
+            android:id="@+id/place"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_place_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+        <ImageButton
+            android:id="@+id/dining"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_local_dining_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+        <ImageButton
+            android:id="@+id/events"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_event_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.0"
+        android:layout_weight="1.0">
+        <ImageButton
+            android:id="@+id/people"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_people_outline_black_"
+            android:layout_weight="1.0" android:onClick="onClick" />
+        <ImageButton
+            android:id="@+id/courses"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_account_balance_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+        <ImageButton
+            android:id="@+id/gallery"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_dashboard_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3.0"
+        android:layout_weight="1.0">
+        <ImageButton android:id="@+id/timetable"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_timeline_black_"
+            android:layout_weight="1.0"
+            android:onClick="onClick" />
+        <Space android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+        <Space
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:weightSum="2.0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
